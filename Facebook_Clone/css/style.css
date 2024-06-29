@@ -554,7 +554,6 @@ nav {
     width: 100%;
     border-radius: 6px;
     margin-bottom: 14px;
-    border: 2px solid chocolate;
 }
 
 .profile-details {
@@ -564,13 +563,11 @@ nav {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border: 2px solid red;
 }
 
 .pd-row {
     display: flex;
     align-items: flex-start;
-    border: 2px solid #41DB51
 }
 
 .pd-image {
@@ -620,7 +617,6 @@ nav {
 
 .pd-right {
     text-align: right;
-    border: 3px solid rgb(135, 14, 48);
 }
 
 .pd-right a {
@@ -629,7 +625,6 @@ nav {
     padding: 12px;
     display: inline-flex;
     margin-top: 30px;
-    border: 2px solid black;
 }
 
 .pd-right a img {
@@ -641,17 +636,14 @@ nav {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 20px;
-    border: 2px solid blue;
 }
 
 .info-col {
     flex-basis: 33%;
-    border: 2px solid darkorange;
 }
 
 .post-col {
     flex-basis: 65%;
-    border: 2px solid darkgreen;
 }
 
 .profile-intro {
@@ -739,5 +731,114 @@ nav {
     cursor: pointer;
     padding-bottom: 20px;
 }
-
 /* Profile page style end here */
+
+
+/* Making responsive for small device start here */
+
+/* Media query for home page */
+@media (max-width: 900px) {
+    .right-sidebar, .left-sidebar {
+        display: none;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .logo {
+        width: 110px;
+        margin-right: 20px;
+    }
+
+    .nav-left ul li img {
+        width: 20px;
+        margin: 0 8px;
+    }
+
+    .nav-user-icon img {
+        width: 30px;
+    }
+
+    .nav-user-icon {
+        margin-left: 0;
+    }
+
+    .add-post-links {
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    .story img {
+        width: 30px;
+        border-width: 3px;
+    }
+
+    .story p {
+        font-size: 10px;
+    }
+
+    .story.story1 img {
+        width: 25px;
+        bottom: 30px;
+    }
+
+    .add-post-links a {
+        margin-right: 12px;
+        font-size: 9px;
+    }
+
+    .add-post-links a img {
+        width: 16px;
+        margin-right: 5px;
+    }
+
+    .post-input-container {
+        padding-left: 0;
+    }
+
+    .settings-menu {
+        width: 90%;
+    }
+}
+
+/* Media query for profile page */
+@media (max-width: 900px) {
+    .profile-container {
+        padding: 20px 5%;
+    }
+
+    .profile-details {
+        flex-wrap: wrap;
+    }
+
+    .pd-right {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .pd-right button {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .pd-row div h3 {
+        font-size: 16px;
+    }
+
+    .profile-info {
+        flex-wrap: wrap;
+    }
+
+    .info-col, .post-col {
+        flex-basis: 100%;
+    }
+}
+/* Making responsive for small device end here */
