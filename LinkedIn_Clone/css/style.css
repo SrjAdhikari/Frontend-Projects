@@ -5,3 +5,126 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+/*********************** Navigation bar style start here ************************/
+
+/* Style for navbar */
+.navbar {
+    display: flex;                          /* Use flexbox for layout */
+    align-items: center;                    /* Center items vertically */
+    justify-content: space-between;         /* Space out items evenly */
+    background: #fff;
+    padding: 6px 6%;                        /* Padding of 6px vertically and 6% horizontally */
+    position: sticky;                       /* Navbar sticks at the top, it does not move while scrolling the webpage */
+    top: 0;                                 /* Stick to the top of the viewport */
+    z-index: 100;                           /* Ensure navbar is on top of other elements */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for Logo */
+.logo img {
+    width: 30px;
+    margin-right: 15px;                     /* Add space to the right of the logo */
+    display: block;                         /* Display as block element */
+}
+
+/* Style for navbar center column menu list item */
+.navbar-center ul li {
+    display: inline-block;                  /* Display items in a row */
+    list-style: none;                       /* Remove bullet points */
+}
+
+/* Style for navbar center column menu anchor tag */
+.navbar-center ul li a {
+    display: flex;                          /* Arrange navbar menu text and images horizontally */
+    align-items: center;                    /* Center items vertically */
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 5px;                     /* Space between the each menu link items */
+    position: relative;                     /* Position relative for pseudo-elements */
+}
+
+/* Style for navbar center column menu link images */
+.navbar-center ul li a img {
+    width: 30px;
+}
+
+/* Create a horizontal blue line for hover effect of menu link items */
+.navbar-center ul li a::after {
+    content: '';                            /* Create an empty pseudo-element */
+    width: 0;                               /* Initial width of the line */
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;                 /* Smooth width transition */
+}
+
+.navbar-center ul li a:hover::after,            /* Set hover effect for menu link items*/
+.navbar-center ul li a.active-link::after {     /* Set blue border line by default active on home link */
+    width: 100%;                                /* Full width on hover or when active */
+}
+
+/* Style for navbar right column profile image */
+.nav-profile-img {
+    width: 40px;
+    border-radius: 50%;                     /* Make the profile image circular */
+    display: block;                         /* Display as block element */
+    cursor: pointer;
+    position: relative;                     /* Position relative for pseudo-elements */
+}
+
+.online {
+    position: relative;                     /* Position relative for pseudo-elements */
+}
+
+/* Style for online icon on user profile picture */
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    background: #41db51;
+    position: absolute;
+}
+
+/* Style for nav bar search box */
+.search-box {
+    background-color: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar-left {
+    display: flex;          /* Make logo and search box in same horizontal line */
+    align-items: center;
+}
+
+.search-box img {
+    width: 14px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+/*********************** Navigation bar style end here ************************/
