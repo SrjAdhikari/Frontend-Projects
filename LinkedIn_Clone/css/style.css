@@ -190,7 +190,7 @@ a {
 .sidebar-profile-links {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 .sidebar-profile-links a {
@@ -220,6 +220,7 @@ a {
 
 .sidebar-activity h3 {
     color: #777;
+    font-size: 14px;
     font-weight: 500;
     margin: 20px 0 10px;
 }
