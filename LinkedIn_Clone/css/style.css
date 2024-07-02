@@ -140,6 +140,8 @@ a {
 .left-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;         /* Makes the sidebar stick to the left position as the user scrolls */
+    top: 73px;                /* Sets the distance from the top of the viewport where the sidebar will become sticky */
 }
 
 .sidebar-profile-box {
@@ -258,6 +260,8 @@ a {
 .right-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;         /* Makes the sidebar stick to the right position as the user scrolls */
+    top: 73px;                /* Sets the distance from the top of the viewport where the sidebar will become sticky */
 }
 
 .sidebar-news {
