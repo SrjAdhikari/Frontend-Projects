@@ -4,371 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile_Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/4a10caa140.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation bar start here -->
-    <nav>
-        <div class="nav-left">
-            <a href="../index.html">
-                <img src="../images/logo2.png" class="logo" alt="Website Logo">
-            </a>
-            <ul>
-                <li><img src="../images/notification.png" alt=""></li>
-                <li><img src="../images/inbox.png" alt=""></li>
-                <li><img src="../images/video.png" alt=""></li>
-            </ul>
-        </div>
 
-        <div class="nav-right">
+    <!-- *************************** Nav bar start here *************************** -->
+    <nav class="navbar">
+
+        <!-- In nav bar there are 3 columns : left column for logo & search, center for menu items, and right for user icon -->
+        <div class="navbar-left">
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
             <div class="search-box">
                 <img src="../images/search.png" alt="">
                 <input type="text" name="search" id="search" placeholder="Search">
             </div>
-            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
-                <img src="../images/profile-pic.png" alt="Profile Picture">
+        </div>
+
+        <div class="navbar-center">
+            <ul>
+                <li>
+                    <a href="#" class="active-link"><img src="../images/home.png" alt=""><span>Home</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/network.png" alt=""><span>My Network</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/jobs.png" alt=""><span>Jobs</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/message.png" alt=""><span>Messaging</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/notification.png" alt=""><span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <div class="online">
+                <img src="../images/user-1.png" alt="Profile Picture" class="nav-profile-img" onclick="toggleMenu()">
             </div>
         </div>
 
-        <!-- Settings menu start here -->
-        <div class="settings-menu">
-            <div id="dark-btn">
-                <span></span>
-            </div>
-            <div class="settings-menu-inner">
-                <div class="user-profile">
-                    <img src="../images/profile-pic.png" alt="">
+        <!-- ********************** Profile drop down menu start here ********************** -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="../images/user-1.png" alt="">
                     <div>
-                        <p>John Nicholson</p>
-                        <a href="profile.html">See Your Profile</a>
+                        <h3>Rayan Walton</h3>
+                        <a href="#">See your profile</a>
                     </div>
                 </div>
                 <hr>
-                <div class="user-profile">
+
+                <a href="#" class="profile-menu-link">
                     <img src="../images/feedback.png" alt="">
-                    <div>
-                        <p>Give Feedback</p>
-                        <a href="#">Help us to improve the UI/UX</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="settings-links">
-                    <img src="../images/setting.png" class="settings-icon" alt="">
-                    <a href="#">Settings & Privacy
-                        <img src="../images/arrow.png" width="10px" alt="">
-                    </a>
-                </div>
-                <div class="settings-links">
-                    <img src="../images/help.png" class="settings-icon" alt="">
-                    <a href="#">Help & Support
-                        <img src="../images/arrow.png" width="10px" alt="">
-                    </a>
-                </div>
-                <div class="settings-links">
-                    <img src="../images/display.png" class="settings-icon" alt="">
-                    <a href="#">Display & Accessibility
-                        <img src="../images/arrow.png" width="10px" alt="">
-                    </a>
-                </div>
-                <div class="settings-links">
-                    <img src="../images/logout.png" class="settings-icon" alt="">
-                    <a href="#">Logout
-                        <img src="../images/arrow.png" width="10px" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- Settings menu end here -->
-        
-    </nav>
-    <!-- Navigation bar end here -->
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
 
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
 
-    <!-- Profile page start here -->
-    <div class="profile-container">
-        <img src="../images/cover.png" class="cover-img" alt="Cover Photo">
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
 
-        <div class="profile-details">
-            <div class="pd-left">
-                <div class="pd-row">
-                    <img src="../images/profile.png" alt="" class="pd-image">
-                    <div>
-                        <h3>Jack Nicholson</h3>
-                        <p>123 Friends - 20 mutual</p>
-                        <img src="../images/member-1.png" alt="">
-                        <img src="../images/member-2.png" alt="">
-                        <img src="../images/member-3.png" alt="">
-                        <img src="../images/member-4.png" alt="">
-                    </div>
-                </div>
-            </div>
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
 
-            <div class="pd-right">
-                <button type="button">
-                    <img src="../images/add-friends.png" alt="">
-                    Friend
-                </button>
-                <button type="button">
-                    <img src="../images/message.png" alt="">
-                    Message
-                </button>
-                <br>
-                <a href="#">
-                    <img src="../images/more.png" alt="">
+                <a href="#" class="profile-menu-link">
+                    <img src="../images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
                 </a>
             </div>
-
         </div>
-
-        <div class="profile-info">
-            <div class="info-col">
-                <div class="profile-intro">
-                    <h3>Intro</h3>
-                    <p class="intro-text">Believe in yourself and you can do unbelievable things.
-                        <img src="../images/feeling.png" alt="">
-                    </p>
-                    <hr>
-                    <ul>
-                        <li> <img src="../images/profile-job.png" alt=""> Software Engineer at Amazon</li>
-                        <li> <img src="../images/profile-study.png" alt=""> Studied at Waseda-Bunri College of Arts & Sciences</li>
-                        <li> <img src="../images/profile-study.png" alt=""> Went to Tokyo, Japan</li>
-                        <li> <img src="../images/profile-home.png" alt=""> Lives in Tokyo, Japan</li>
-                        <li> <img src="../images/profile-location.png" alt=""> From Pokhara, Nepal</li>
-                    </ul>
-                </div>
-
-                <div class="profile-intro">
-                    <div class="title-box">
-                        <h3>Photos</h3>
-                        <a href="#">All Photos</a>
-                    </div>
+        <!-- ********************** Profile drop down menu end here ********************** -->
         
-                    <div class="photo-box">
-                        <div><img src="../images/photo1.png" alt=""></div>
-                        <div><img src="../images/photo2.png" alt=""></div>
-                        <div><img src="../images/photo3.png" alt=""></div>
-                        <div><img src="../images/photo4.png" alt=""></div>
-                        <div><img src="../images/photo5.png" alt=""></div>
-                        <div><img src="../images/photo6.png" alt=""></div>
-                    </div>
-                </div>
+    </nav>
+    <!-- *************************** Nav bar end here *************************** -->
 
-                <div class="profile-intro">
-                    <div class="title-box">
-                        <h3>Friends</h3>
-                        <a href="#">All Friends</a>
-                    </div>
-                    <p>120 (10 mutual)</p>
-                    <div class="friends-box">
-                        <div><img src="../images/member-1.png" alt=""><p>Joseph</p></div>
-                        <div><img src="../images/member-2.png" alt=""><p>Nathan</p></div>
-                        <div><img src="../images/member-3.png" alt=""><p>George</p></div>
-                        <div><img src="../images/member-4.png" alt=""><p>Francis</p></div>
-                        <div><img src="../images/member-5.png" alt=""><p>Anthony</p></div>
-                        <div><img src="../images/member-6.png" alt=""><p>Michael</p></div>
-                        <div><img src="../images/member-7.png" alt=""><p>Edward</p></div>
-                        <div><img src="../images/member-8.png" alt=""><p>Bradon</p></div>
-                        <div><img src="../images/member-9.png" alt=""><p>James</p></div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="post-col">
-                <div class="write-post-container">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
-                        </div>
-                    </div>
-                    <div class="post-input-container">
-                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
     
-                        <div class="add-post-links">
-                            <a href="#">
-                                <img src="../images/live-video.png" alt=""> Live Video
-                            </a>
-                            <a href="#">
-                                <img src="../images/photo.png" alt=""> Photo Video
-                            </a>
-                            <a href="#">
-                                <img src="../images/feeling.png" alt="">Feeling Activity
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <span>June 30 202, 11:59 AM</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                
-                <p class="post-text">
-                    Learning Frontend Web Development.
-                    <a href="#">#Frontend Tutorial</a>
-                    <a href="#">#YouTubeChannel</a>
-                </p>
-                <img src="../images/feed-image-1.png" class="post-img" alt="">
+    <script src="script/script.js"></script>
 
-                <div class="post-row">
-                    <div class="activity-icon">
-                        <div><img src="../images/like-blue.png" alt="">150</div>
-                        <div><img src="../images/comments.png" alt="">50</div>
-                        <div><img src="../images/share.png" alt="">20</div>
-                    </div>
-                    <div class="post-profile-icon">
-                        <img src="../images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <span>June 30 202, 11:59 AM</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                
-                <p class="post-text">
-                    Learning Frontend Web Development.
-                    <a href="#">#Frontend Tutorial</a>
-                    <a href="#">#YouTubeChannel</a>
-                </p>
-                <img src="../images/feed-image-2.png" class="post-img" alt="">
-
-                <div class="post-row">
-                    <div class="activity-icon">
-                        <div><img src="../images/like.png" alt="">100</div>
-                        <div><img src="../images/comments.png" alt="">10</div>
-                        <div><img src="../images/share.png" alt="">10</div>
-                    </div>
-                    <div class="post-profile-icon">
-                        <img src="../images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <span>June 30 202, 11:59 AM</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                
-                <p class="post-text">
-                    Learning Frontend Web Development.
-                    <a href="#">#Frontend Tutorial</a>
-                    <a href="#">#YouTubeChannel</a>
-                </p>
-                <img src="../images/feed-image-3.png" class="post-img" alt="">
-
-                <div class="post-row">
-                    <div class="activity-icon">
-                        <div><img src="../images/like.png" alt="">100</div>
-                        <div><img src="../images/comments.png" alt="">10</div>
-                        <div><img src="../images/share.png" alt="">10</div>
-                    </div>
-                    <div class="post-profile-icon">
-                        <img src="../images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <span>June 30 202, 11:59 AM</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                
-                <p class="post-text">
-                    Learning Frontend Web Development.
-                    <a href="#">#Frontend Tutorial</a>
-                    <a href="#">#YouTubeChannel</a>
-                </p>
-                <img src="../images/feed-image-4.png" class="post-img" alt="">
-
-                <div class="post-row">
-                    <div class="activity-icon">
-                        <div><img src="../images/like.png" alt="">100</div>
-                        <div><img src="../images/comments.png" alt="">10</div>
-                        <div><img src="../images/share.png" alt="">10</div>
-                    </div>
-                    <div class="post-profile-icon">
-                        <img src="../images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-container">
-                <div class="post-row">
-                    <div class="user-profile">
-                        <img src="../images/profile-pic.png" alt="">
-                        <div>
-                            <p>John Nicholson</p>
-                            <span>June 30 202, 11:59 AM</span>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                
-                <p class="post-text">
-                    Learning Frontend Web Development.
-                    <a href="#">#Frontend Tutorial</a>
-                    <a href="#">#YouTubeChannel</a>
-                </p>
-                <img src="../images/feed-image-5.png" class="post-img" alt="">
-
-                <div class="post-row">
-                    <div class="activity-icon">
-                        <div><img src="../images/like.png" alt="">100</div>
-                        <div><img src="../images/comments.png" alt="">10</div>
-                        <div><img src="../images/share.png" alt="">10</div>
-                    </div>
-                    <div class="post-profile-icon">
-                        <img src="../images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        
-
-    </div>
-    <!-- Profile page end here -->
-
-
-    <!-- Footer start here -->
-    <div class="footer">
-        <p>Copyright&copy; 2024 - All right reserved</p>
-    </div>
-    <!-- Footer end here -->
-
-    <script src="../script/script.js"></script>
 </body>
-</html>
+</html> 
