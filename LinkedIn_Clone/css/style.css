@@ -564,6 +564,10 @@ a {
     transition: max-height 0.5s;
 }
 
+.profile-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
 .profile-menu {
     background: #222;
     color: #fff;
