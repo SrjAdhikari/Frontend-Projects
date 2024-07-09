@@ -15,7 +15,7 @@ img {
 }
 
 /* ---------------- Nav bar style start here ---------------- */
-.nav-bar {
+.nav-bar, .flex-div {
     display: flex;
     align-items: center;
 }
@@ -168,7 +168,7 @@ nav {
 }
 
 .banner {
-    width: 1005;
+    width: 100%;
 }
 
 .banner img {
@@ -188,12 +188,12 @@ nav {
     border-radius: 5px;
 }
 
-.video-list .flex-div {
+.video-list .flex-div  {
     align-items: flex-start;
     margin-top: 7px;
 }
 
-.video-list .flex-div img {
+.video-list .flex-div  img {
     width: 35px;
     margin-right: 10px;
     border-radius: 50%;
