@@ -16,5 +16,5 @@ menuIcon.onclick = function() {
 
     // Toggle the class 'largr-container' on the container element
     // This will change the width or padding of the main content area based on CSS styles
-    container.classList.toggle('largr-container')
+    container.classList.toggle('large-container')
 };
