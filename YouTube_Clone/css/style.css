@@ -453,4 +453,25 @@ nav {
     color: #0000ff;
 }
 
+/* -------------- Media query for small device -------------- */
+@media (max-width: 900px) {
+    .play-video, .right-sidebar {
+        flex-basis: 100%;
+    }
+
+    .play-container {
+        padding-left: 5%;
+    }
+
+    .video-description {
+        padding-left: 0;
+    }
+
+    .play-video .play-video-info a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
 /* ------------- video-info page style end here ------------- */
