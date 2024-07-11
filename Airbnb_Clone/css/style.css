@@ -138,3 +138,55 @@ nav {
     color: #333;
 }
 /* ---------------- Exclusives style end here --------------- */
+
+/* ---------------- Trending Places style start here -------- */
+.trending-place {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending-place div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending-place h3 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+/* ---------------- Trending Places style end here ---------- */
+
+/* ---------------- Call To Action style start here --------- */
+.call-to-action {
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+
+.call-to-action h3 {
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.call-to-action-btn {
+    background: #ff5361;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* ---------------- Call To Action style end here ----------- */
