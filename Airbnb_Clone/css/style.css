@@ -410,3 +410,30 @@ nav .fa-bars {
         font-size: 15px;
     }
 }
+
+
+/* -------------- List Page Style start here  --------------- */
+
+/* ---------------- Nav bar style start here ---------------- */
+.white-navbar {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.white-navbar .nav-links li a {
+    color: #000;
+}
+
+.white-navbar .register-btn {
+    background: #ff5361;
+    color: #fff;
+}
+
+nav.white-navbar .fa-bars {
+    color: #000;
+}
+
+.white-navbar .active::after {
+    background: #ff5361;
+}
+/* ---------------- Nav bar style end here ------------------ */
