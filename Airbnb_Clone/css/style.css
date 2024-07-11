@@ -190,3 +190,59 @@ nav {
     display: inline-block;
 }
 /* ---------------- Call To Action style end here ----------- */
+
+/* ---------------- Travellers Stories style start here ----- */
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img {
+    width: 1005;
+    border-radius: 10px;
+}
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+.stories p {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+}
+/* ---------------- Travellers Stories style end here ------- */
+
+.start-btn {
+    text-decoration: none;
+    background: #ff5361;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+/* ---------------- About Message style  -------------------- */
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
