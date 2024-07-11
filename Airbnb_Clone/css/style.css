@@ -38,6 +38,22 @@ nav {
 
 }
 
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
 .register-btn {
     background: #fff;
     color: #000;
@@ -48,7 +64,7 @@ nav {
 }
 /* ---------------- Nav bar style end here ------------------ */
 
-/* ---------------- Nav bar style start here ---------------- */
+/* ---------------- Search bar style start here ------------- */
 .container {
     padding: 0 7%;
 }
@@ -104,7 +120,7 @@ nav {
 .location-input {
     flex: 1;
 }
-/* ---------------- Nav bar style end here ------------------ */
+/* ---------------- search bar style end here --------------- */
 
 /* ---------------- Exclusives style start here ------------- */
 .exclusives {
@@ -245,4 +261,31 @@ nav {
     font-size: 28px;
     margin-bottom: 30px;
     font-weight: 500;
+}
+
+/* ---------------- Footer Message style  ------------------- */
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+.footer p {
+    padding-bottom: 15px;
 }
