@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House-Info Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a10caa140.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- *--------------------- Navigation bar start here ---------------------* -->
+    <nav id="navbar" class="white-navbar">
+        <img src="../images/logo-red.png" alt="" class="logo">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="toggleBtn()"></i>
+    </nav>
+    <!-- *--------------------- Navigation bar end here -----------------------* -->
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: San Francisco, California, United States</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="../images/house-1.png" alt=""></div>
+            <div><img src="../images/house-2.png" alt=""></div>
+            <div><img src="../images/house-3.png" alt=""></div>
+            <div><img src="../images/house-4.png" alt=""></div>
+            <div><img src="../images/house-5.png" alt=""></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>$100 / day</h4>
+        </div>
+        <hr class="line">
+
+        <form action="" class="check-form">
+            <div>
+                <label for="">Check-in</label>
+                <input type="text" name="" id="" placeholder="Add Date">
+            </div>
+            <div>
+                <label for="">Check-out</label>
+                <input type="text" name="" id="" placeholder="Add Date">
+            </div>
+            <div class="guest-field">
+                <label for="">Guest</label>
+                <input type="text" name="" id="" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <ul class="details-list">
+            <li><i class="fa-solid fa-house"></i>Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class="fa-solid fa-broom"></i>Enhanced Clean
+                <span>This host has committed to staybnb's cleaning process.</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% of recent guest gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Great Check-in Experience
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+        <hr class="line">
+
+        <p class="home-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem deserunt, quaerat perferendis dolore voluptas enim perspiciatis tenetur. Et, illum aliquid quas, atque hic autem quis, id sint mollitia illo eos voluptates. Architecto sit, ex modi maiores laudantium quae, tenetur omnis vero distinctio consequuntur hic ipsa libero exercitationem? Possimus, veniam earum!</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83267.33848418231!2d-122.50791616538143!3d37.75255383399033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586deffffffc3%3A0xcded139783705509!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sjp!4v1720757588721!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>San Francisco, California, United States</b>
+            <p>It's like a home away from home.</p>
+        </div>
+        <hr class="line">
+
+        <div class="host">
+            <img src="../images/host.png" alt="">
+            <div>
+                <h2>Hosted by Brandon</h2>
+                <p>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> 
+                    </span>  &nbsp; &nbsp; 350 Reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min
+                </p>
+            </div>
+        </div>
+
+        <a href="#" class="contact-host">Contact Host</a>
+    </div>
+
+    <div class="container">
+        <!-- *--------------------- Footer start here ------------------------------* -->
+        <div class="footer">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <hr>
+            <p>Copyright &copy; 2024, Staybnb</p>
+        </div>
+        <!-- *--------------------- Footer end here --------------------------------* -->
+    </div>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>
